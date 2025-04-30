@@ -7,7 +7,8 @@
  */
 function sumValues(num1, num2, add) {
     if (add) {
-        const result = 0;
+        if (typeof num1 !== 'number') { return false; }
+        let result = 0;
 
         result = num1 + num2;
 
